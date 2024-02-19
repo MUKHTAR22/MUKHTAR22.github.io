@@ -1,0 +1,287 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 44px;
+}
+
+
+header{
+  background-color: lightpink;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+.navbar{
+  display: flex;
+}
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+  
+}
+
+.nav-list{
+  text-align: center;
+  list-style: none;
+  font-size: 1.5rem;
+  margin: 0 10px;
+
+}
+.nav-link{
+  text-decoration: none;
+  color: white;
+  transition: opactity 1s;
+  transition: color 0.2s,  background-color 0.2s, paddig 0.2s;
+}
+
+.nav-link:hover{
+  color: lightpink;
+  background-color: white;
+  padding: 5px 14px;
+}
+.nav-link:active{
+  opacity: 0.8;
+}
+
+/* done our navigation */
+
+.hero{
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  background-color: grey;
+  
+}
+
+.description{
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  height: 60%;
+  width: 30%;
+}
+
+p{
+  color: black;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(173, 216, 230, 0.479);
+  border-radius:5000px 3000px;
+  padding: 0;
+  
+}
+
+.Me{
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+  cursor: pointer;
+  margin-right: 80px;
+  transition: width 0.15s height 0.15s;
+}
+
+.Me:hover{
+  width: 456px;
+  height: 456px;
+  
+}
+
+
+/* read more button CSS */
+.read-more {
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  text-align: center;
+  margin-top: 15px;
+  transition: box-shadow 0.15s, transform 0.15s ;
+}
+
+.read-more:disabled {
+  pointer-events: none;
+}
+
+.read-more:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.read-more:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.button-link{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* done our hero or intro part */
+
+.projects{
+  padding-top: 15px;
+  width: 100vw;
+  background-color: rgb(149, 187, 199);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  padding-bottom: 10px;
+  z-index: 1;
+   
+}
+
+.projects h3{
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  
+}
+
+
+
+.project{
+display: flex;
+flex-direction: column;
+width: calc(100vw/4);
+justify-content: left;
+align-items: center;
+background-color: gray;
+border-radius: 10px;
+margin-top: 80px;
+}
+
+.project-image{
+object-fit: contain;
+width: calc(100vw/4);
+border-radius: 10px 10px 0 0;
+}
+
+.project-description{
+  margin: 4px;
+}
+.project-description h4{
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.project-description p{
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+
+.project-link{
+  text-decoration: none;
+  transition: opacity 0.15s, margin 0.15s;
+}
+.project-link:hover{
+  opacity: 0.85;
+  margin: 0 0 20px;
+}
+
+.project-link:active{
+  opacity: 0.7;
+}
+
+/* done our project part yeeees */
+
+.contact-container{
+  width: 100vw;
+  background-color: rgb(80, 129, 129);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding-top: 8vh;
+  padding-bottom: 20px;
+}
+
+.noworry{
+  width: 40vw;
+  margin-bottom: 30px;
+}
+
+.contact-container h1{
+  font-size: 3rem;
+}
+
+.contact-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: start;
+}
+
+.button-div{
+  margin-right: 20px;
+  
+}
+
+.buttona{
+  font-size: 1.2rem;
+  color: grey;
+  padding: 4px 20px;
+  transition: box-shadow 0.15s transform 0.15s;
+  border-style: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttona:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0;
+  transform: translateY(-2px);
+}
+
+footer{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  min-height: 10vh;
+
+}
+
+footer p{
+  color: white;
+  font-size: 1.3rem;
+}
